@@ -60,7 +60,6 @@ const getJobUsingId = async (req, res) => {
             );
             return res.status(response.statusCode).json(response);
         }
-        console.log(job);
 
 
         const response = new ApiResponse(

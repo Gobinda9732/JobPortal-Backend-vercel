@@ -10,12 +10,12 @@ import UserRoutes from "./src/routes/user.route.js";
 
 
 const PORT = process.env.PORT || 3001;
-const origin = process.env.CORS_ORIGINS;
+const origin = "https://job-portal-frontend-vercel.vercel.app";
 const app = express();
 
 app.use(
   cors({
-    origin: "https://job-portal-frontend-vercel.vercel.app",
+    origin: origin,
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   })

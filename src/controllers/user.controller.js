@@ -13,14 +13,14 @@ const registerUser = async (req, res) => {
     const existingUser = await User.findOne({ email });
 
     if (existingUser) {
-      console.log("hiii");
+      // console.log("hiii");
 
       const response = new ApiError(
         401,
         "User Already Exist", // This is the 'message' argument
         []                    // This is the 'errors' argument
       );
-      console.log(response);
+      // console.log(response);
 
       return res.status(response.statusCode).json(response.message);
     }
