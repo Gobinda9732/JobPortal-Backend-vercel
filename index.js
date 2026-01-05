@@ -15,7 +15,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: origin,
+    origin: "https://job-portal-frontend-vercel.vercel.app",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   })
